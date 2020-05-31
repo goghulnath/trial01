@@ -14,13 +14,15 @@ body{
 }
 h1,h2{
 text-align: center;
+
 }
 h1{
     font-size:10vw;
     font-family: 'Amatic SC', cursive;
+    letter-spacing: 4px;
 }
 h2{
-    margin-top: -25px; 
+    margin-top: -25px;
     font-size: 30px;
     font-size:7vw;
     font-family: 'Grand Hotel', cursive;
@@ -29,9 +31,32 @@ span{
     font-family: 'Amatic SC', cursive;
     font-size: 5vw ;
 }
-img{
+#cake{
     margin-top: -20px;
 }
+
+#flex-container{
+            display: flex;
+            justify-content:center;
+            
+        }
+        img{
+            width:15vw;
+            height: auto;
+            margin-left: 10px;
+        }
+        h6{
+            text-align: center;
+            font-size: 5vw;
+            font-family:'Grand Hotel', cursive ;
+            letter-spacing: 1px;
+            margin-top: -10px;
+            color:#3385b6;
+    
+        }
+        .flex-item{
+            padding: 12px;
+        }
 </style>
 </head>
 <body bgcolor="white">
@@ -39,23 +64,45 @@ img{
 <h1>Happy Birthday </h1>
     <h2>
         Pilla 
-        <span>aka </span>
+        &nbsp;<span>aka</span>&nbsp;
         Muth
-        <span>aka </span>
+        &nbsp;<span>aka </span>&nbsp;
         Tincy
     </h2> 
 
-   <center> <img src="bday3.jpg" width="200vw" height="auto">
+   <center> <img id="cake" src="C:\Users\goghulnath\Downloads\bday3.jpg" width="200vw" height="auto">
     </center>
 <br>
 
 
+<div id="flex-container">
 
+    <div class="flex-item">
+        <img src="D:\goodie\h1.png" alt="mcc" caption="good hearted">
+        <h6>Kind hearted</h6>
+    </div>
 
+    <div class="flex-item">
+        <img src="D:\goodie\w1.png" alt="mcc" caption="good hearted">
+        <h6 style="margin-top:-2px;">Well wisher</h6>
+    </div>
 
-
+    <div class="flex-item">
+        <img src="D:\goodie\h1.png" alt="mcc" caption="good hearted">
+        <h6>Good hearted</h6>
+    </div>
 
    
-
-  
- </body></html>
+</div>
+ 
+ </body>
+ 
+ 
+ <script>
+     document.addEventListener("DOMContentLoaded",()=>{
+        alert("Welcome") 
+     })
+     
+ </script>
+ 
+ </html>
