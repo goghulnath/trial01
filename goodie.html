@@ -10,6 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&amp;display=swap" rel="stylesheet">
     
 <style>
+       #fly{
+            animation-name: show;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+            animation-delay: 2s;
+        }
+        @keyframes show{
+                0%{
+                    top:-10px;
+                    
+                }
+                100%{
+                    top:20px;
+                   
+                }
+            }
 body{
     color:deeppink; 
 }
@@ -126,7 +142,7 @@ span{
 </style>
 </head>
 <body bgcolor="white">
-<img src="balloon.png" alt="" style="position: absolute;top:20px;right:20px;">
+<img src="balloon.png" alt="" style="position: absolute;top:20px;right:20px;" id="fly">
    
 <h1>Happy Birthday </h1>
     <h2>
